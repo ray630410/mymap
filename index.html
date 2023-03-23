@@ -40,7 +40,7 @@ function showPosition(position) {
     var longitude = position.coords.longitude;
 
     var url = "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB-bUUbWhwk-V3ahXnQV64SNRJwttmQdUI";
-    var data = { "considerIp": "true" };
+    var data = { "considerIp": "false" };
 
     $.post(url, data, function (response) {
         var latitude = response.location.lat;
